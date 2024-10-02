@@ -67,3 +67,4 @@ C:\Learnings\Dot net web api\MyApiProject\obj\Debug\net8.0\refint\MyApiProject.d
 C:\Learnings\Dot net web api\MyApiProject\obj\Debug\net8.0\MyApiProject.pdb
 C:\Learnings\Dot net web api\MyApiProject\obj\Debug\net8.0\MyApiProject.genruntimeconfig.cache
 C:\Learnings\Dot net web api\MyApiProject\obj\Debug\net8.0\ref\MyApiProject.dll
+C:\Learnings\Dot net web api\MyApiProject\obj\Debug\net8.0\MyApiProject.sourcelink.json
