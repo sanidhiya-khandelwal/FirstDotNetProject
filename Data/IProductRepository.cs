@@ -9,7 +9,7 @@ namespace MyApiProject.Repository
     public interface IProductRepository
     {
         Task<List<Product>> GetProductsAsync();
-        Task<Product> GetProductByIdAsync();
+        Task<Product> GetProductByIdAsync(int id);
         Task<int> AddProductAsync(Product product);
         Task<int> UpdateProductAsync(Product product);
         Task<int> DeleteProductAsync(int id);

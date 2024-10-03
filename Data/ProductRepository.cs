@@ -35,7 +35,7 @@ namespace MyApiProject.Repository
                         products.Add(new Product
                         {
                             ProductID = Convert.ToInt32(reader["ProductID"]),
-                            Name = reader["Name"].ToString();
+                            Name = reader["Name"].ToString(),
                             Price = Convert.ToDecimal(reader["Price"]),
                             CategoryID = Convert.ToInt32(reader["CategoryID"]),
                             SupplierID = Convert.ToInt32(reader["SupplierID"])
