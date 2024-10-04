@@ -10,6 +10,7 @@ builder.Services.AddSwaggerGen();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddSingleton(new ProductRepository(connectionString));
+builder.Services.AddScoped<IProductRepository>(provider => new ProductRepository(connectionString));
 builder.Services.AddScoped<IProductService, ProductService>();
 var app = builder.Build();
 
