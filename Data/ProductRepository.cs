@@ -9,7 +9,7 @@ using System.Runtime.CompilerServices;
 
 namespace MyApiProject.Repository
 {
-    public class ProductRepository
+    public class ProductRepository : IProductRepository
     {
         private readonly string _connectionString;
         public ProductRepository(string connectionString)
@@ -37,8 +37,8 @@ namespace MyApiProject.Repository
                             ProductID = Convert.ToInt32(reader["ProductID"]),
                             Name = reader["Name"].ToString(),
                             Price = Convert.ToDecimal(reader["Price"]),
-                            CategoryID = Convert.ToInt32(reader["CategoryID"]),
-                            SupplierID = Convert.ToInt32(reader["SupplierID"])
+                            CategoryName = Convert.ToInt32(reader["CategoryName"]),
+                            SupplierName = Convert.ToInt32(reader["SupplierName"])
                         });
                     }
                 }
